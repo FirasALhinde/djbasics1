@@ -1,4 +1,9 @@
-{% for post in posts%}
-<h1><a href="{% url 'blog:post_detail' post.id %}">{{post}}</a></h1>
+<a href="/blog"><h1>Our Blug</h1></a>
+  
+  <a href="{% url 'blog:new_post' %}">new post</a>
+  <hr />
+  {% for post in posts%}
+  <h3><a href="{% url 'blog:post_detail' post.id %}">{{post}}</a></h3>
 
-{% endfor %}
+  {% endfor %}
+</a>

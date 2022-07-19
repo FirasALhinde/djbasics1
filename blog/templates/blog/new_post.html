@@ -1,0 +1,9 @@
+<a href="/blog"><h1>Our Blug</h1></a>
+
+<hr />
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %} {{form}}
+  <br />
+  <hr />
+  <input type="submit" value="New Post" />
+</form>
